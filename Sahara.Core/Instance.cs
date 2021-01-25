@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Data.SqlTypes;
-using System.Net;
-using System.Numerics;
 using System.Threading;
+using Sahara.Core.Game;
 
 namespace Sahara.Core
 {
@@ -18,13 +16,12 @@ namespace Sahara.Core
 		public string ClassName;
 		public string Name;
 		public Instance Parent;
-		public bool Archivable;
 
 		/// <summary>
 		/// @CSharpLua.Template = "game"
 		/// </summary>
 		/// <returns>The current DataModel</returns>
-		public static extern Instance Game();
+		public static extern Game.Game Game();
 
 		/// <summary>
 		/// @CSharpLua.Template = "script"
@@ -54,6 +51,14 @@ namespace Sahara.Core
 		/// <param name="index">The index</param>
 		/// <returns></returns>
 		public extern object Get(object index);
+
+		/// <summary>
+		/// Exactly the same as "Get", but asserts that return is a child.
+		/// @CSharpLua.Template = "{this}[{0}]"
+		/// </summary>
+		/// <param name="index"></param>
+		/// <returns></returns>
+		public extern Instance GetChild(object index);
 
 		/// <summary>
 		/// Set [index] to value (a[b] = c)
@@ -194,18 +199,6 @@ namespace Sahara.Core
 		/// </summary>
 		/// <returns></returns>
 		public extern Instance WaitForChild();
-
-		public static void Test()
-		{
-			var a = Instance.Game();
-			a.Namecall("hey", "b","c","d");
-			a.Set("Name", "wee");
-			var b = a.GetAttributes();
-			foreach (var c in b)
-			{
-				Console.WriteLine(c);
-			}
-		}
 
 	}
 }
