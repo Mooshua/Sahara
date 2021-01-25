@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sahara.Core", "Sahara.Core\Sahara.Core.csproj", "{B18129A8-331F-45A4-8130-D9346513CE0C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sahara", "Sahara\Sahara.csproj", "{E3A03724-13AD-4B2F-B9A4-4A6FF4A668F3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B18129A8-331F-45A4-8130-D9346513CE0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B18129A8-331F-45A4-8130-D9346513CE0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B18129A8-331F-45A4-8130-D9346513CE0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B18129A8-331F-45A4-8130-D9346513CE0C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A03724-13AD-4B2F-B9A4-4A6FF4A668F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A03724-13AD-4B2F-B9A4-4A6FF4A668F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A03724-13AD-4B2F-B9A4-4A6FF4A668F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A03724-13AD-4B2F-B9A4-4A6FF4A668F3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
